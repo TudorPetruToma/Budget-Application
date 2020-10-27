@@ -1,16 +1,6 @@
 let budgetController = (function(){
 
-        let x = 10;
-
-        let add = function(a){
-            return x + a;
-        }
-
-        return{
-            publicTest: function(b){
-                return add(b)
-            }
-        }
+        //some code
 })();
 
 let UIController = (function(){
@@ -19,12 +9,6 @@ let UIController = (function(){
 
 let controller = (function(budgetCtrl, UICtrl){
 
-    let z = budgetCtrl.publicTest(50)
-
-    return{
-        anotherPublic: function(){
-            console.log(z)
-        }
-    }
+    //some code
 
 })(budgetController, UIController)
