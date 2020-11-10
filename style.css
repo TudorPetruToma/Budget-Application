@@ -113,10 +113,20 @@ body {
 **********************************************/
 
 /***** FORM *****/
-.add {
-    padding: 14px;
+.add__container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "column-1 column-2 column-3 column-4";
+    grid-template-columns: repeat(1fr, 4);
+    padding: 14px 0;
     border-bottom: 1px solid #e7e7e7;
     background-color: #f7f7f7;
+    justify-content: center
+}
+
+.add__container *:nth-child(1){
+    
+    grid-area: column-3;
 }
 
 .add__container {
